@@ -22,30 +22,24 @@
     <!-- endbuild -->
   </head>
   <body>
+  <div class = "issues">
+    <h2>Open Issues</h2>
+    <ul class="issues-list"></ul
+  </div>
+  <div class= "stuff">
+    <h2>Comments</h2>
+    <ul class="context"></ul
+  </div>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
+  <script type="text/template" id="template-list">
+      <li class="link" data-id="<%= comments_url%>"><%= title %></li>
+  </script>
 
-        <li>Sass</li>
+  <script type="text/template" id="body">
+      <li><%= descript %></li>
+  </script>
 
-
-        <li>Modernizr</li>
-
-
-        <li>Bourbon & Neat</li>
-
-
-        <li>UnderscoreJS</li>
-
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
-    </div>
-
-    <!-- build:js scripts/vendor.js -->
+        <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
@@ -53,6 +47,7 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
+        <script src="scripts/1token.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
